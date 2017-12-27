@@ -24,7 +24,7 @@ class ApplicationController < Sinatra::Base
     if session[:user_id] = @user.id
       erb :account
     else
-      erb :error      
+      erb :error
     end
   end
 
