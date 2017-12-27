@@ -8,9 +8,9 @@
   <body id="page-top">
     <a href="/logout">Log Out</a>
     <% if @user.is_logged_in?(session) %>
-    <%= %>
+    <%=  %>
     <% else %>
-    <%= %>
+    <a href="/home">Home</a>
     <% end %>
   </body>
 </html>
