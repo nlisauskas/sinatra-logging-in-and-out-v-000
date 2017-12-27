@@ -7,6 +7,10 @@
   </head>
   <body id="page-top">
     <a href="/logout">Log Out</a>
-
+    <% if @user.is_logged_in?(session) %>
+    <%= %>
+    <% else %>
+    <%= %>
+    <% end %>
   </body>
 </html>
